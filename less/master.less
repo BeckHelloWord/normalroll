@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.fn-left{
+  float:left;
+}
+.fn-right{
+  float:right;
+}
+.fn-clear{
+  zoom:1;
+  //overflow:auto;
+  &:after{
+    display:block;
+    content:'';
+    height:0;
+    visibility:hidden;
+    clear:both;
+    font-size:0;
+    line-height:0;
+    overflow:hidden;
+  }
+}
+.index-main{
+  width: 100%;
+  height: 980px;
+  background: #f7f7f7;
+  .main-left{
+    width: 30%;
+    height: 700px;
+    background: #a78f85;
+    position: relative;
+  }
+  .left-content{
+    width: 300px;
+    height: 310px;
+    margin: 100px auto 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  .left-ui{
+    width: 100%;
+    height: 310px;
+    position: relative;
+    left: 0;
+    top:0;
+  }
+  .left-list{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+  }
+  .main-right{
+    width: 65%;
+    height: 700px;
+    background: #fff;
+    margin-left: 20px;
+  }
+  .right-content{
+    width: 660px;
+    height: 450px;
+    overflow: hidden;
+    margin: 100px auto 0;
+  }
+  .right-ui{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top:0;
+  }
+  .right-list{
+    float: left;
+    width: 660px;
+    height: 450px;
+    margin-right: 20px;
+  }
+  .title-en{
+    font-size: 24px;
+    color: #333333;
+  }
+  .title-cn{
+    font-size: 20px;
+    color: #343434;
+    margin: 20px 0;
+  }
+  .main-cont{
+    font-size: 18px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd2cc;
+    color: #656565;
+    line-height:30px;
+  }
+  .main-img{
+    margin-top: 30px;
+  }
+  .img-title{
+    font-size: 40px;
+    color: #333;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .img-1{
+    width: 160px;
+    height: 100px;
+    text-align: center;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      border: 0;
+    }
+  }
+  .trigger-btn{
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    bottom: 170px;
+  }
+  .prev{
+    left: 160px;
+    background: url("../images/arrow.png") no-repeat;
+  }
+  .next{
+    right:160px;
+    background:url("../images/arrow-1.png") no-repeat;
+  }
+  .number{
+    position: absolute;
+    color: #fff;
+    right:30px;
+    bottom: 30px;
+    font-size: 14px;
+  }
+}
